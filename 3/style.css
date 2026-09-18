@@ -1,0 +1,139 @@
+@import url('utils.css');
+@font-face {
+    font-family:tcsFont;
+    src: url(./Houschka\ Pro\ Medium.ttf);
+}
+
+:root{
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --primary-text-color: #000;
+    --secondary-text-color: #fff;
+}
+
+header{
+    background-color: var(--primary-color);
+}
+
+.headerOverlay{
+    width: 90%;
+    margin: auto;
+}
+
+.leftHeader{
+    display: flex;
+}
+.leftHeader ul{
+    display: flex;
+    gap: 20px;
+    li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-size: 22px;
+            color: var(--secondary-text-color);
+        }
+    }
+}
+.edgeSection{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondry-text-color);
+}
+.edgeOverLay{
+    width:90%;
+    height:100% ;
+    margin: auto;
+    
+}
+.ESbox{
+    height: 450px;
+    width: 450px;
+   background-color: #333737;
+    
+}
+.edgePara{
+    padding: 50px 0px;
+    font-size: 50px;
+
+}
+.edgeContainer{
+    gap: 20px;
+}
+.upperESbox{
+    width:100%;
+    height: 60%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+}
+.lowerESbox{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    h3{
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+}
+.ES-slider-div{
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: 25px;
+    }
+
+}
+.esslider-arrow{
+    background-color: #4e84c4;
+    width: 60px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    i{
+        font-size: 20px;
+    }
+}
+
+.leftarrow{
+    position: absolute;
+    left:-20px;
+  transition: all .4s ease;
+}
+.rightarrow{
+    position: absolute;
+    left: 18px;
+    transition: all .4s ease;
+}
+.ESbox:hover{
+    .leftarrow{
+        left: 18px;
+    }
+    .rightarrow{
+        left: 50px;
+    }
+}
+.ESbox:hover{
+    .leftarrow{
+        left:18px;
+    }
+    .rightarrow{
+        left: 50px;
+    }
+}
+.upperESbox{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
